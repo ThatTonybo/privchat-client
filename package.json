@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "ThatTonybo",
   "license": "MIT",
+  "bin": {
+    "privchat": "./bin/privchat"
+  },
   "dependencies": {
     "clear": "^0.1.0",
     "common-tags": "^1.8.0",
