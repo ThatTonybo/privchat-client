@@ -11,18 +11,29 @@ PrivChat is a small, self-hostable chat server that runs out of the terminal and
 * Built with websockets, super easy to hack and modify for your needs
 
 ## Setup
-1. `git clone` the repository or install it using npm/yarn
-2. Install any dependencies
-3. Run `privtalk` to open up a client
+First, you'll need a server. Install the privchat-server package, and start a server:
+```
+npm install privchat-server --global
+```
+```
+privchat-server
+// => Opened server on port 8080
+```
+Note that you can change the prefix if needed:
+```
+privchat-server --port 80
+// => Opened server on port 80
+```
 
-You'll need a server running to connect to as well, here's the procedure:
-1. `git clone` the server repository or install it using npm/yarn
-2. Install any dependencies
-3. Open `config.json` and change the port if required (default: 8080)
-4. Start the server using index.js
-5. Optionally start the server using a package manager like pm2
-
-Then, any clients can connect using the public IP or localhost with that port, omitting the `ws://` prefix.
+Next, you can install the privchat-client package:
+```
+npm install privchat-client --global
+```
+Now, you're ready to start the client:
+```
+privchat
+```
+Clients can connect using the public IP or localhost with the server port, omitting the `ws://` prefix (as this is added by the client).
 
 ## Bugs
 * Chat doesn't scroll or scale properly just yet
