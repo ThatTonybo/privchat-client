@@ -1,6 +1,6 @@
 {
   "name": "privchat-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Client portion of PrivChat",
   "main": "index.js",
   "author": "ThatTonybo",
