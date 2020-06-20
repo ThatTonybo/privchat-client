@@ -1,0 +1,17 @@
+{
+  "name": "privchat-client",
+  "version": "1.0.0",
+  "description": "Client portion of PrivChat",
+  "main": "index.js",
+  "author": "ThatTonybo",
+  "license": "MIT",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "common-tags": "^1.8.0",
+    "figures": "^3.2.0",
+    "ora": "^4.0.4",
+    "random-id": "^1.0.4",
+    "terminal-kit": "^1.35.7",
+    "ws": "^7.3.0"
+  }
+}
