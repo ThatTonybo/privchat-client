@@ -1,12 +1,16 @@
 {
   "name": "privchat-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Client portion of PrivChat",
   "main": "index.js",
   "author": "ThatTonybo",
   "license": "MIT",
   "bin": {
     "privchat": "./bin/privchat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThatTonybo/privchat-client"
   },
   "dependencies": {
     "clear": "^0.1.0",
