@@ -13,6 +13,8 @@ const term = Terminal.terminal;
 let appLocale = null;
 
 const app = async () => {
+    term.windowTitle('PrivChat');
+
     term.magenta(`     ____       _       ________          __ 
     / __ \\_____(_)   __/ ____/ /_  ____ _/ /_
    / /_/ / ___/ / | / / /   / __ \\/ __ \`/ __/
@@ -20,7 +22,7 @@ const app = async () => {
  /_/   /_/  /_/ |___/\\____/_/ /_/\\__,_/\\__/  
                                              `);
     term.nextLine();
-    term.bgMagenta.white(`PrivChat`);
+    term.bgMagenta.white(`Log in - PrivChat`);
     term.magenta(` 1.0.0 by ThatTonybo`);
     term.down(2).column(0);
 
@@ -49,7 +51,9 @@ const app = async () => {
     }, options.debug);
 
     client.events.on('ready', (user) => {
+        term.windowTitle(`${username}@${address} - PrivChat`);
         loader.succeed(`Connected to server`);
+        
         term('You are logged in as: ').magenta(`${username}`);
 
         setTimeout(() => {
